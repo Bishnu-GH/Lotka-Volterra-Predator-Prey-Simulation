@@ -52,18 +52,4 @@ The simulation generates:
 
 ---
 
-## 📁 Files
 
-- `lotka_volterra.py`: Python script implementing the model and visualizations
-- `README.md`: Project description and documentation (this file)
-
----
-
-## ▶️ How to Run
-
-Make sure you have Python and the required libraries installed:
-
-```bash
-pip install numpy matplotlib scipy
-
-python lotka_volterra.py
