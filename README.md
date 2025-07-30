@@ -13,9 +13,9 @@ The model simulates how these populations evolve over time and how they influenc
 
 Solve the following system of coupled differential equations:
 
-$$
+\[
 \frac{dx}{dt} = \alpha x - \beta x y
-$$
+\]
 \[
 \frac{dy}{dt} = -\gamma y + \delta x y
 \]
