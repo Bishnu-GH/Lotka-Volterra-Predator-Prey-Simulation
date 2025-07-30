@@ -14,6 +14,9 @@ It simulates how these populations change over time and influence each other thr
 We solve the following system of coupled differential equations:
 
 
+dx/dt = α · x − β · x · y  
+dy/dt = −γ · y + δ · x · y
+
 Where:
 
 | Symbol | Meaning                          |
