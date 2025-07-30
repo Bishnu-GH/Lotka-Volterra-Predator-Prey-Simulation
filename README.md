@@ -1,68 +1,69 @@
-# 🐇🦊 Lotka-Volterra Predator-Prey Model
+# 🐇🦊 Lotka–Volterra Predator–Prey Model
 
-This project implements the **Lotka–Volterra model**, a set of first-order non-linear differential equations that describe the dynamics between two interacting species in an ecosystem:
+This project implements the **Lotka–Volterra model**, a system of first-order non-linear differential equations that describe the dynamics of two interacting species in an ecosystem:
 
 - **Prey** (e.g., rabbits 🐇)
 - **Predator** (e.g., foxes 🦊)
 
-The model simulates how these populations evolve over time and how they influence each other's growth and decline.
+It simulates how these populations change over time and influence each other through a predator–prey relationship.
 
 ---
 
 ## 📘 Problem Statement
 
-Solve the following system of coupled differential equations:
+We solve the following system of coupled differential equations:
 
-\[
-\frac{dx}{dt} = \alpha x - \beta x y
-\]
-\[
-\frac{dy}{dt} = -\gamma y + \delta x y
-\]
 
 Where:
 
-| Variable | Meaning                          |
-|----------|----------------------------------|
-| \( x \)  | Number of prey (rabbits)         |
-| \( y \)  | Number of predators (foxes)      |
-| \( \alpha \) | Growth rate of prey (rabbits)     |
-| \( \beta \)  | Rate at which predators destroy prey |
-| \( \gamma \) | Death rate of predators            |
-| \( \delta \) | Reproduction rate of predators by consuming prey |
+| Symbol | Meaning                          |
+|--------|----------------------------------|
+| `x`    | Number of prey (rabbits)         |
+| `y`    | Number of predators (foxes)      |
+| `α`    | Growth rate of prey              |
+| `β`    | Rate at which predators eat prey |
+| `γ`    | Death rate of predators          |
+| `δ`    | Reproduction rate of predators   |
 
 ---
 
 ## 🔧 Parameters
 
-- \( \alpha = 1.5 \)
-- \( \beta = 1 \)
-- \( \gamma = 3 \)
-- \( \delta = 1 \)
+The model uses the following constants:
+
+- α = 1.5  
+- β = 1  
+- γ = 3  
+- δ = 1  
 
 ### Initial Conditions:
 
-- Number of rabbits: **10**
-- Number of foxes: **4**
+- Rabbits (`x`) = 10  
+- Foxes (`y`) = 4  
 
 ---
 
 ## 📊 Output
 
-The simulation provides:
-- **Time series plot** of both prey and predator populations.
-- **Phase-space plot** showing the relationship between rabbit and fox populations over time.
+The simulation generates:
+
+- A **time series plot** of both rabbit and fox populations
+- A **phase-space plot** showing the relationship between predator and prey over time
 
 ---
 
-## 📂 Files
+## 📁 Files
 
-- `lotka_volterra.py` – Python script implementing the model and plotting the results.
-- `README.md` – This file.
+- `lotka_volterra.py`: Python script implementing the model and visualizations
+- `README.md`: Project description and documentation (this file)
 
 ---
 
 ## ▶️ How to Run
 
+Make sure you have Python and the required libraries installed:
+
 ```bash
+pip install numpy matplotlib scipy
+
 python lotka_volterra.py
